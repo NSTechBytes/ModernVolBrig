@@ -1,0 +1,27 @@
+[Variables]
+BackGroundColor=255,255,255
+BackGround_Opacity=150
+Scale=1.5
+OnVolume=66, 156, 227
+FontColor=10,10,10
+TrayDark=0
+Set.Blur=Blur
+Set.BlurCorner=RoundSmall
+; -------------------------------- Positional -------------------------------- ;
+Position=BR
+MonitorIndex=1
+XPad=0
+YPad=0
+PreserveTaskbarSpace=1
+StayOnDesktop=0
+
+Animated=1
+EaseType=OutQuart
+AniDir=Bottom
+AniSteps=18
+AnimationDisplacement=30
+
+
+DarkMode=0
+
+Color=10,10,10

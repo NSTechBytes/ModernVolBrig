@@ -1,0 +1,79 @@
+[Update_S]
+Meter=String
+Text=Appearance
+FontFace=Roboto
+FontWeight=900
+AntiAlias=1
+FontSize=20
+FontColor=255,255,255
+X=150
+Y=30
+
+
+[Version_S]
+Meter=String
+Text=Dark Mode
+FontFace=Roboto
+AntiAlias=1
+FontSize=12
+FontColor=255,255,255
+X=150
+Y=100
+
+[Dark_IM]
+Meter=Image
+Imagename=#@#Images\on.png
+w=30
+h=30
+Y=100
+X=450
+LeftMouseUpAction=[!WriteKeyValue Variables Color 10,10,10 "#@#Vars.nek"][!WriteKeyValue Variables BackGroundColor 255,255,255 "#@#Vars.nek"][!WriteKeyValue Variables BackGround_Opacity 150 "#@#Vars.nek"][!WriteKeyValue Variables FontColor  10,10,10 "#@#Vars.nek"][!WriteKeyValue Variables DarkMode  0 "#@#Vars.nek"][!RainmeterRefreshApp]
+
+
+[Light_IM]
+Meter=Image
+Imagename=#@#Images\off.png
+w=30
+h=30
+Y=100
+X=450
+LeftMouseUpAction=[!WriteKeyValue Variables Color 255,255,255 "#@#Vars.nek"][!WriteKeyValue Variables BackGroundColor 10,10,10 "#@#Vars.nek"][!WriteKeyValue Variables BackGround_Opacity 150 "#@#Vars.nek"][!WriteKeyValue Variables FontColor  200,200,200 "#@#Vars.nek"][!WriteKeyValue Variables DarkMode  1 "#@#Vars.nek"][!RainmeterRefreshApp]
+Hidden=#DarkMode#
+[Div_1]
+Meter=Shape
+Shape=Rectangle 0,0,340,1 | StrokeWidth 0 | Fill Color 255,255,255
+DynamicVariables=1
+X=150
+Y=30r
+
+
+[Tray_S]
+Meter=String
+Text=Tray Icon Dark
+FontFace=Roboto
+AntiAlias=1
+FontSize=12
+FontColor=255,255,255
+X=150
+Y=10r
+
+[TrayDark_IM]
+Meter=Image
+Imagename=#@#Images\on.png
+w=30
+h=30
+Y=130
+X=450
+LeftMouseUpAction=[!WriteKeyValue Variables TrayDark 0 "#@#Vars.nek"][!RainmeterRefreshApp]
+
+[TrayLight_IM]
+Meter=Image
+Imagename=#@#Images\off.png
+w=30
+h=30
+Y=130
+X=450
+LeftMouseUpAction=[!WriteKeyValue Variables TrayDark 1 "#@#Vars.nek"][!RainmeterRefreshApp]
+Hidden=#TrayDark#
+
+
